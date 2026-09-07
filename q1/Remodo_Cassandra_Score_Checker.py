@@ -19,3 +19,24 @@ elif score >= 75:
     print("Satisfactory")
 else:
     print("Needs Improvement")
+
+# ---------------------------------------------------------
+# REFLECTION
+# ---------------------------------------------------------
+
+# 1. How did selection structures make the program more useful?
+# Selection structures made the program more useful because
+# it can make different decisions based on the student's score.
+# It gives the correct classification for each score range.
+
+# 2. How did proper comments and readable formatting improve
+# your program?
+# Proper comments explain the important parts of the program,
+# while readable formatting makes the code easier to understand.
+# Meaningful variable names also make the purpose of the code clearer.
+
+# 3. Why is it useful to plan the program using a flowchart
+# and pseudocode before writing the code?
+# A flowchart and pseudocode help organize the program's logic
+# before coding. They make it easier to identify decisions,
+# possible outputs, and errors before writing the actual program.
