@@ -1,4 +1,3 @@
-# Clean Decision Code Makeover: Student Score Checker
 
 **Name:** Cassandra Jade B. Remodo
 **Section:** 8 - Dahlia
