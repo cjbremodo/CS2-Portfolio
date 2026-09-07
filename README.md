@@ -4,3 +4,5 @@
 > [hello.py](q1/hello.py)
 
 > [Remodo_Cassandra_Distance.py](q1/Remodo_Cassandra_Distance.py)
+
+>[Remodo_Cassandra_Score_Checker.py](q1/Remodo_Cassandra_Score_Checker.py)
