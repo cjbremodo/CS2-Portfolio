@@ -36,46 +36,25 @@ I improved a Student Score Checker program using selection structures and proper
 
 **Part 2 - Flowchart**
 
- ┌───────┐
- │ START │
- └───┬───┘
-     │
-     ▼
-┌─────────────┐
-│ Input Score │
-└──────┬──────┘
-       │
-       ▼
-┌───────────────────┐
-│ Score < 0 OR >100?│
-└───┬─────────┬─────┘
-   Yes        No
-    │          │
-    ▼          ▼
-┌───────────┐  ┌───────────┐
-│ Invalid   │  │ Score>=90?│
-│ Score     │  └──┬────┬───┘
-└─────┬─────┘    Yes   No
-      │           │     │
-      ▼           ▼     ▼
-     END   Outstanding Score>=80?
-                         │
-                    ┌────┴────┐
-                   Yes       No
-                    │         │
-                    ▼         ▼
-          Very Satisfactory Score>=75?
-                              │
-                         ┌────┴────┐
-                        Yes       No
-                         │         │
-                         ▼         ▼
-                  Satisfactory  Needs
-                               Improvement
-                         │         │
-                         └────┬────┘
-                              ▼
-                             END
+START
+↓
+Input Score
+↓
+Is score valid (0-100)?
+├─ No → Display "Invalid Score." → END
+└─ Yes
+    ↓
+    Is score ≥ 90?
+    ├─ Yes → Outstanding → END
+    └─ No
+        ↓
+        Is score ≥ 80?
+        ├─ Yes → Very Satisfactory → END
+        └─ No
+            ↓
+            Is score ≥ 75?
+            ├─ Yes → Satisfactory → END
+            └─ No → Needs Improvement → END
 
 **Part 3 - Pseudocode**
 
