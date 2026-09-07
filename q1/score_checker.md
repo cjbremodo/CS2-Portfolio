@@ -36,7 +36,7 @@ I improved a Student Score Checker program using selection structures and proper
 
 **Part 2 - Flowchart**
 
-![Score Checker Flowchart](./score_checker_flowchart.png)
+![Score Checker Flowchart](./score_checker_flowchart_formal.png)
 
 **Part 3 - Pseudocode**
 
