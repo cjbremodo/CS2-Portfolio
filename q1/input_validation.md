@@ -12,59 +12,54 @@
 
 #### Part B
 Pseudocode
-START Program
+START
 
-  OUTPUT "--- PSHS BRC Student Registration ---"
+Input student name
+Input age
+Input grade level
+Input email
+Input registration code
 
-  WHILE True
-INPUT user_name
-IF user_name is blank THEN
-OUTPUT "Error: Name cannot be blank."
+Set valid to TRUE
+
+IF student name is blank
+    Display "Student name is required."
+    Set valid to FALSE
+END IF
+
+Try converting age to integer
+    IF age is less than 11 OR greater than 18
+        Display "Age must be from 11 to 18."
+        Set valid to FALSE
+    END IF
+Catch error
+    Display "Age must be a number."
+    Set valid to FALSE
+END TRY
+
+IF grade level is not 7,8,9,10,11,12
+    Display "Invalid grade level."
+    Set valid to FALSE
+END IF
+
+IF email does not contain @ OR .
+    Display "Invalid email address."
+    Set valid to FALSE
+END IF
+
+IF registration code length is not 6
+    Display "The registration code must contain exactly 6 characters."
+    Set valid to FALSE
+END IF
+
+IF valid is TRUE
+    Display REGISTRATION ACCEPTED
+    Display student information
 ELSE
-BREAK loop
-ENDIF
-ENDWHILE
+    Display REGISTRATION NOT ACCEPTED
+END IF
 
-  WHILE True
-INPUT user_age
-IF user_age is a number AND user_age is between 11 and 18 THEN
-BREAK loop
-ELSE
-OUTPUT "Error: Age must be between 11 and 18."
-ENDIF
-ENDWHILE
-
-  WHILE True
-INPUT user_grade
-IF user_grade is a number AND user_grade is between 7 and 12 THEN
-BREAK loop
-ELSE
-OUTPUT "Error: Grade must be between 7 and 12."
-ENDIF
-ENDWHILE
-
-  WHILE True
-INPUT user_email
-IF user_email ends with "@brc.pshs.edu.ph" AND has a handle THEN
-BREAK loop
-ELSE
-OUTPUT "Error: Invalid school email domain."
-ENDIF
-ENDWHILE
-
-  WHILE True
-INPUT registration_code
-IF length of registration_code equals 6 THEN
-BREAK loop
-ELSE
-OUTPUT "Error: Code must be exactly 6 characters."
-ENDIF
-ENDWHILE
-
-OUTPUT "--- Registration Complete ---"
-PRINT user_name, user_age, user_grade, user_email, registration_code
-
-END Program
+END
 
 ### Part C
 [workshop_validator.py](workshop_validator.py)
