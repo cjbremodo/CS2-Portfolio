@@ -7,7 +7,7 @@
 
 
 
-#### PartB
+#### Part B
 Pseudocode
 START Program
 
