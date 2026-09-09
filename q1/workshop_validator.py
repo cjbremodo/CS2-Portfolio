@@ -1,53 +1,52 @@
-# Workshop Validator
-def get_user_name():
-    while True:
-        try:
-            name = input("Please enter your name: ")
-            if not name.strip():
-                raise ValueError("Name cannot be blank.")
-            return name.strip()
-        except ValueError as e:
-            print(f"Invalid input: {e} Please try again.\n")
+# PSHS Workshop Registration Validator
 
-def get_user_age():
-    while True:
-        age_input = input("Please enter your age (11-18): ").strip()
-        if age_input.isdigit() and 11 <= int(age_input) <= 18:
-            return int(age_input)
-        print("Invalid input: Please enter a number between 11 and 18.\n")
+name = input("Enter student name: ")
+age_input = input("Enter age: ")
+grade = input("Enter grade level: ")
+email = input("Enter email: ")
+code = input("Enter registration code: ")
 
-def get_grade_level():
-    while True:
-        grade = input("Enter your grade level (7-12): ").strip()
-        if grade.isdigit() and 7 <= int(grade) <= 12:
-            return int(grade)
-        print("Invalid input: Please enter a grade between 7 and 12.\n")
+valid = True
 
-def get_user_email():
-    while True:
-        email = input("Please enter your email: ").strip()
-        if email.endswith("@brc.pshs.edu.ph") and len(email.split("@")[0]) > 0:
-            return email
-        print("Invalid email. Must be your unique handle followed by @brc.pshs.edu.ph\n")
+# Student Name Validation
+if name.strip() == "":
+    print("Student name is required.")
+    valid = False
 
-def get_registration_code():
-    while True:
-        code = input("Please enter your 6-character registration code: ").strip()
-        if len(code) == 6:
-            return code
-        print("Invalid code. Registration code must be exactly 6 characters long.\n")
+# Age Validation
+try:
+    age = int(age_input)
+    if age < 11 or age > 18:
+        print("Age must be from 11 to 18.")
+        valid = False
+except ValueError:
+    print("Age must be a number.")
+    valid = False
 
-# --- Execution Sequence ---
-print("--- PSHS BRC Student Registration ---\n")
-user_name = get_user_name()
-user_age = get_user_age()
-user_grade = get_grade_level()
-user_email = get_user_email()
-user_code = get_registration_code() # Ensures the registration code executes
+# Grade Level Validation
+if grade not in ["7", "8", "9", "10", "11", "12"]:
+    print("Invalid grade level.")
+    valid = False
 
-print("\n--- Registration Complete ---")
-print(f"Name: {user_name}")
-print(f"Age: {user_age}")
-print(f"Grade: {user_grade}")
-print(f"Email: {user_email}")
-print(f"Registration Code: {user_code}")
+# Email Validation
+if "@" not in email or "." not in email:
+    print("Invalid email address.")
+    valid = False
+
+# Registration Code Validation
+if len(code) != 6:
+    print("The registration code must contain exactly 6 characters.")
+    valid = False
+
+# Final Output
+if valid:
+    print("------------------------------")
+    print("REGISTRATION ACCEPTED")
+    print("------------------------------")
+    print(f"Student: {name}")
+    print(f"Age: {age}")
+    print(f"Grade Level: {grade}")
+    print(f"Email: {email}")
+    print(f"Registration Code: {code}")
+else:
+    print("REGISTRATION NOT ACCEPTED")
