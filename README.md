@@ -13,3 +13,7 @@
 > [workshop_validator.py](q1/workshop_validator.py)
 
 > [input_validation.md](input_validation.md)
+
+> [secure_registration.py](secure_registration.py)
+
+> [cybersecurity.md](cybersecurity.md)
