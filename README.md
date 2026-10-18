@@ -20,4 +20,4 @@
 
 ### 2nd Quarter
 
-> [canteencalculator.py](q2 /canteencalculator.py)
+> [[canteencalculator.py](q2 /canteencalculator.py)](https://github.com/cjbremodo/CS2-Portfolio/blob/main/q2%20/canteencalculator.py)
