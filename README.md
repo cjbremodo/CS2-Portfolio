@@ -17,3 +17,7 @@
 > [secure_registration.py](secure_registration.py)
 
 > [cybersecurity.md](cybersecurity.md)
+
+### 2nd Quarter
+
+> [canteencalculator.py](q2/canteencalculator.py)
