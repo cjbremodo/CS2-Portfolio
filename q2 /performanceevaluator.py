@@ -27,3 +27,13 @@ eligible = is_eligible(average, completed_tasks)
 print(f"Average: {average:.2f}")
 print(f"Performance: {performance}")
 print(f"Eligible for Challenge: {eligible}")
+
+# DOCUMENTATION
+
+# 1. calculate_average() returns a number, get_performance() returns a string, and is_eligible() returns True or False.
+
+# 2. calculate_average() returns the average, which is passed to get_performance().
+
+# 3. The student is not eligible because they completed fewer than 3 tasks.
+
+# 4. return lets the program reuse the result, while print() only displays it.
