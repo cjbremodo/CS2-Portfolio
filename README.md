@@ -21,3 +21,4 @@
 ### 2nd Quarter
 
 > [canteencalculator.py](https://github.com/cjbremodo/CS2-Portfolio/blob/main/q2%20/canteencalculator.py)
+> [performanceevaluator.py](q2/performanceevaluator.py]
