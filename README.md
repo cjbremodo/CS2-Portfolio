@@ -23,3 +23,5 @@
 > [canteencalculator.py](https://github.com/cjbremodo/CS2-Portfolio/blob/main/q2%20/canteencalculator.py)
 
 > [performanceevaluator.py](https://github.com/cjbremodo/CS2-Portfolio/blob/main/q2%20/performanceevaluator.py)
+
+>[programmingexercises.md](https://github.com/cjbremodo/CS2-Portfolio/blob/main/q2%20/programmingexercises.md)
