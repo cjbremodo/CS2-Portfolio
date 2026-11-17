@@ -1,10 +1,8 @@
 # Python Loop Exercises
 
-This repository contains four Python exercises about loops and functions.
-
 ## Exercise 1: Count Even Numbers
 
-**Task:** Display even numbers from 2 to 20 using a for loop.
+Task: Display even numbers from 2 to 20 using a for loop.
 
 ```python
 # Print even numbers from 2 to 20
@@ -12,13 +10,13 @@ for number in range(2, 21, 2):
     print(number)
 ```
 
-**Explanation:**
+Explanation:
 - `range(2, 21, 2)` counts by 2, starting from 2.
 - `print()` displays each number.
 
 ## Exercise 2: The Countdown Timer
 
-**Task:** Count down from 10 to 1, then display "Time is up!"
+Task: Count down from 10 to 1, then display "Time is up!"
 
 ```python
 # Start at 10
@@ -33,14 +31,14 @@ while number >= 1:
 print("Time is up!")
 ```
 
-**Explanation:**
+Explanation:
 - The while loop keeps running while the number is at least 1.
 - `number -= 1` subtracts 1 after each count.
 - After the countdown, it prints "Time is up!"
 
 ## Exercise 3: Skip Multiples
 
-**Task:** Display numbers from 1 to 15, skipping multiples of 3.
+Task: Display numbers from 1 to 15, skipping multiples of 3.
 
 ```python
 # Check numbers from 1 to 15
@@ -53,14 +51,14 @@ for number in range(1, 16):
     print(number)
 ```
 
-**Explanation:**
+Explanation:
 - The for loop checks numbers from 1 to 15.
 - `%` checks the remainder when dividing.
 - `continue` skips numbers that are multiples of 3.
 
 ## Exercise 4: Multiplication Table Generator
 
-**Task:** Create a function that prints the multiplication table of a number from 1 to 10.
+Task: Create a function that prints the multiplication table of a number from 1 to 10.
 
 ```python
 # Create the multiplication table function
@@ -79,7 +77,7 @@ user_number = int(input("Enter a number: "))
 show_table(user_number)
 ```
 
-**Explanation:**
+Explanation:
 - `def show_table(number)` creates a function.
 - The for loop multiplies the number from 1 to 10.
 - `input()` asks the user to enter a number.
